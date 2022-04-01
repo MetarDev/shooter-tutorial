@@ -89,7 +89,7 @@ export class Scene2 extends Phaser.Scene {
     this.physics.add.overlap(this.projectiles, this.enemies, this.hitEnemy, null, this);
 
     // Part 10 - Score
-    this.scoreLabel = this.add.bitmapText(10, 5, "pixelFont", "SCORE ", 16 );
+    this.scoreLabel = this.add.bitmapText(10, 5, "pixelFont", "SCORE  ", 16 );
 
     setInterval(() => {
       if (this.enemies.getChildren().length < 20) {
